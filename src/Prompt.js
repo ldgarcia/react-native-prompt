@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import {
   Modal,
   Platform,
@@ -9,7 +10,7 @@ import {
 } from 'react-native';
 import styles from './styles';
 
-export default class Prompt extends Component {
+export default class Prompt extends React.Component {
   static propTypes = {
     title: PropTypes.string.isRequired,
     visible: PropTypes.bool,
